@@ -7,7 +7,7 @@ import { Tile as OlTileLayer, Vector as OlVectorLayer } from 'ol/layer';
 
 import OlView from 'ol/View';
 import OlSelect from 'ol/interaction/Select';
-import { click } from 'ol/events/condition';
+import { click }  from 'ol/events/condition';
 import OlVectorSource from 'ol/source/Vector';
 import GeoJSON from 'ol/format/GeoJSON.js';
 
@@ -40,7 +40,7 @@ export class MapComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(click);
+
     this.source = new OlXYZ({
       // Tiles from Mapbox (Light)
       url: 'https://api.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
